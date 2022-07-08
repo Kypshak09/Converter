@@ -16,6 +16,9 @@
 		25D8A351287855430016FE7C /* converterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D8A350287855430016FE7C /* converterTests.swift */; };
 		25D8A35B287855430016FE7C /* converterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D8A35A287855430016FE7C /* converterUITests.swift */; };
 		25D8A35D287855430016FE7C /* converterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D8A35C287855430016FE7C /* converterUITestsLaunchTests.swift */; };
+		25D8A36E287857D30016FE7C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D8A36D287857D30016FE7C /* ResultViewController.swift */; };
+		25D8A370287858030016FE7C /* struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D8A36F287858030016FE7C /* struct.swift */; };
+		25D8A3722878580D0016FE7C /* brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D8A3712878580D0016FE7C /* brain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		25D8A356287855430016FE7C /* converterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = converterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D8A35A287855430016FE7C /* converterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = converterUITests.swift; sourceTree = "<group>"; };
 		25D8A35C287855430016FE7C /* converterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = converterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		25D8A36D287857D30016FE7C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		25D8A36F287858030016FE7C /* struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = struct.swift; sourceTree = "<group>"; };
+		25D8A3712878580D0016FE7C /* brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +105,12 @@
 		25D8A3382878553B0016FE7C /* converter */ = {
 			isa = PBXGroup;
 			children = (
-				25D8A3392878553B0016FE7C /* AppDelegate.swift */,
-				25D8A33B2878553B0016FE7C /* SceneDelegate.swift */,
-				25D8A33D2878553B0016FE7C /* ViewController.swift */,
-				25D8A33F2878553B0016FE7C /* Main.storyboard */,
+				25D8A36A287855700016FE7C /* model */,
+				25D8A36B287855790016FE7C /* view */,
+				25D8A369287855560016FE7C /* controller */,
 				25D8A342287855420016FE7C /* Assets.xcassets */,
 				25D8A344287855420016FE7C /* LaunchScreen.storyboard */,
+				25D8A36C2878558B0016FE7C /* others */,
 				25D8A347287855420016FE7C /* Info.plist */,
 			);
 			path = converter;
@@ -125,6 +131,41 @@
 				25D8A35C287855430016FE7C /* converterUITestsLaunchTests.swift */,
 			);
 			path = converterUITests;
+			sourceTree = "<group>";
+		};
+		25D8A369287855560016FE7C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				25D8A33D2878553B0016FE7C /* ViewController.swift */,
+				25D8A36D287857D30016FE7C /* ResultViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		25D8A36A287855700016FE7C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				25D8A36F287858030016FE7C /* struct.swift */,
+				25D8A3712878580D0016FE7C /* brain.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		25D8A36B287855790016FE7C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				25D8A33F2878553B0016FE7C /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		25D8A36C2878558B0016FE7C /* others */ = {
+			isa = PBXGroup;
+			children = (
+				25D8A3392878553B0016FE7C /* AppDelegate.swift */,
+				25D8A33B2878553B0016FE7C /* SceneDelegate.swift */,
+			);
+			path = others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +301,10 @@
 			files = (
 				25D8A33E2878553B0016FE7C /* ViewController.swift in Sources */,
 				25D8A33A2878553B0016FE7C /* AppDelegate.swift in Sources */,
+				25D8A3722878580D0016FE7C /* brain.swift in Sources */,
 				25D8A33C2878553B0016FE7C /* SceneDelegate.swift in Sources */,
+				25D8A370287858030016FE7C /* struct.swift in Sources */,
+				25D8A36E287857D30016FE7C /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
